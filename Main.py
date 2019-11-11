@@ -7,9 +7,8 @@ class MergeSort:
         a, b = self.sort(l[0::2]), self.sort(l[1::2])
 
         return self.__merge_lists(a, b)
-
-    @staticmethod
-    def __merge_lists(a: list, b: list) -> list:
+    
+    def __merge_lists(self, a: list, b: list) -> list:
 
         result = list()
         i = j = k = 0
